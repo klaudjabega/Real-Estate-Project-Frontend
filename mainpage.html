@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Dashboard</title>
+    <link rel="stylesheet" href="styles/mainpage.css"> <!-- Link to the dashboard.css file -->
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <h2>Welcome to Your Real Estate Dashboard</h2>
+        <p><strong>Hello, <span id="userName"></span>!</strong> Here you can manage your property listings.</p>
+
+
+        <!-- Search and Filter Properties -->
+        <div class="search-section">
+            <h3>Search Properties</h3>
+            <input type="text" id="search" placeholder="Search by title, location, etc.">
+            <button onclick="searchProperties()">Search</button>
+        </div>
+        
+        <hr>
+
+        <!-- View Properties -->
+        <div class="properties-section">
+            <h3>Your Properties</h3>
+            <table id="propertiesTable">
+                <tr>
+                    <th>Title</th>
+                    <th>Location</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+                <!-- Dynamic Content will be inserted here -->
+            </table>
+        </div>
+        
+        <hr>
+
+        <!-- Add New Property -->
+        <div class="add-property-section">
+            <h3>Add a New Property</h3>
+            <form id="addPropertyForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required><br><br>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required><br><br>
+
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price" required><br><br>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description"></textarea><br><br>
+
+                <label for="category">Category:</label>
+                <select name="category" id="category">
+                    <option value="residential">Residential</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="land">Land</option>
+                </select><br><br>
+
+                <label for="propertyImage">Upload Image:</label>
+                <input type="file" id="propertyImage" name="propertyImage"><br><br>
+
+                <button type="submit">Add Property</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <!-- Update Property -->
+        <div class="update-property-section">
+            <h3>Update Property</h3>
+            <form id="updatePropertyForm">
+                <label for="updateTitle">Title:</label>
+                <input type="text" id="updateTitle" name="title" required><br><br>
+
+                <label for="updateLocation">Location:</label>
+                <input type="text" id="updateLocation" name="location" required><br><br>
+
+                <label for="updatePrice">Price:</label>
+                <input type="text" id="updatePrice" name="price" required><br><br>
+
+                <label for="updateDescription">Description:</label>
+                <textarea id="updateDescription" name="description"></textarea><br><br>
+
+                <button type="submit">Update Property</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <!-- Logout -->
+        <div class="logout-section">
+            <!-- Updated Logout Button -->
+            <button onclick="logout()">Logout</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="office">
+                <h3>Office 1</h3>
+                <p><strong>Address:</strong> Qender Fushe-Kruje, Kruje, Albania</p>
+                <p><strong>Contact:</strong> +355 69 123 4567</p>
+                <p><strong>Email:</strong> office1@realestate.com</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                </div>
+            </div>
+    
+            <div class="office">
+                <h3>Office 2</h3>
+                <p><strong>Address:</strong> Rruga 5 Maji, Elbasan, Albania</p>
+                <p><strong>Contact:</strong> +355 68 987 6543</p>
+                <p><strong>Email:</strong> office2@realestate.com</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cloud's and Ceska's Real Estate. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="scriptMain.js"></script>
+</body>
+</html>
