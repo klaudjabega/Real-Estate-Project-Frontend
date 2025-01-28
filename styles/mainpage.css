@@ -1,1 +1,151 @@
+/* General Dashboard Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffcc99; /* Soft pastel orange background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
 
+/* Container */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Heading */
+h2 {
+    color: #ff7f50; /* Warm orange for heading */
+    font-size: 2.5rem;
+}
+
+/* Section Styles */
+.search-section,
+.properties-section,
+.add-property-section,
+.update-property-section,
+.logout-section {
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ff7f50; /* Warm orange for table headers */
+    color: #fff;
+}
+
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: #ff7f50; /* Warm orange for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6347; /* Slightly darker orange on hover */
+}
+
+/* Form Styles */
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff7f50; /* Warm orange for form button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff6347; /* Darker orange for hover */
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+    .dashboard-container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.office {
+    width: 45%;
+}
+
+.office h3 {
+    margin-bottom: 10px;
+    color: #ff6347; /* Using a warm color for headers */
+}
+
+.office p {
+    margin: 5px 0;
+}
+
+.social-links a {
+    color: #ff6347; /* Warm color for links */
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
